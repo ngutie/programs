@@ -36,9 +36,8 @@ public class Exercise20_11 {
         int size = stack.size();
         if (size == 0) return true;
         if (size == 1) return false;
-        if (size % 2 != 0) return false; // Must be even for all symbols to have a pair
-
-        while (stack.size() > 0) { // Check all symbols in stack
+        if (size % 2 != 0) return false; 
+        while (stack.size() > 0) { 
             if (holder.size() > 0) {
                 if (isPair(holder.peek(), stack.peek())) {
                     holder.pop();
@@ -62,13 +61,12 @@ public class Exercise20_11 {
   private static Stack<Character> populateStack(String filePath) throws IOException {
         Stack<Character> symbolsStack = new Stack<>();
         Path path = Paths.get(filePath);
-        /* Read the whole file as character values */
-        List<String> lines = Files.readAllLines(path);
+         List<String> lines = Files.readAllLines(path);
 
         for (String line : lines) {
             for (char c : line.toCharArray()) {
-                if (SYMBOLS.contains(String.valueOf(c))) { // Check if the char is in SYMBOLS
-                    symbolsStack.push(c); // Add to stack
+                if (SYMBOLS.contains(String.valueOf(c))) { 
+                    symbolsStack.push(c); /
                 }
             }
         }
