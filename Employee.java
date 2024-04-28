@@ -89,7 +89,7 @@ public class Main {//man class that brings up menus
         scanner.close();
     }
 
-    public static void menu() {// shows menu and ask what the user wants to do next
+   public static void menuEmployee() {// shows menu and ask what the user wants to do next
         Scanner scanner = new Scanner(System.in);
         int choice;
 
@@ -102,5 +102,17 @@ public class Main {//man class that brings up menus
             System.out.print("> ");
             choice = scanner.nextInt();
         }
-    }
+       public static void menuManager() {// shows menu and ask what the user wants to do next
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        while (true) {
+            System.out.println("\nPlease choose an option:");
+            System.out.println("1. See all employee info");
+            System.out.println("2. View all request to have a day off");
+            System.out.println("3. Edit weekly schedule");
+            System.out.println("4. Logout");
+            System.out.print("> ");
+            choice = scanner.nextInt();
+        }
 }
