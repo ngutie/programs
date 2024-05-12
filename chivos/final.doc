@@ -1,0 +1,42 @@
+When trying to implement the javafx i had problems getting it to show using visual code but when debugging it showed no errors and compiled but i also ran the prgram before the java fx was ran and it ran smoothly and showed the classes worked as intended
+
+UML:
+Chivos public
+
+
+Chivos()
+getschedule(EmployeeID: int)
+setschedule(EmployeeID:int, managerID: int)
+request(EmployeeID:int, ManagersID:int)
+
+
+Employee public 
+-firstname: string
+-lastname: string
+-wage: double
+-employeeID: int
+Employee()
+Employee(employeeID: int)
+makerequest(EmployeeID)
+
+
+Manager public
+-firstname: string
+-lastname: string
+-wage: double
+-managerID: int
+manager()
+Manager(managerID: int)
+checkrequest(EmployeeID:int)
+newEmployee(firstname: string, lastname: string, wage: double, employeeID: int)
+newManager(firstname: string, lastname: string, wage: double, managerID: int)
+
+
+WeeklySchedule private
+
+
+weeklyschedule: array
+schedule(employeeID: int, managerID: int)
+
+
+
