@@ -1,7 +1,7 @@
 package chivos;
 
 public class DayOffRequest {
-    private int employeeID;
+    private int employeeID; //constructors
     private String date;
 
     public DayOffRequest(int employeeID, String date) {
