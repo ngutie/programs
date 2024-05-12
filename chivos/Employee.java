@@ -1,11 +1,11 @@
 package chivos;
 class Employee {
-    private String firstName;
+    private String firstName; //constructors
     private String lastName;
     private int employeeID;
     private double wage;
 
-    public Employee(String firstName, String lastName, int employeeID, double wage) {
+    public Employee(String firstName, String lastName, int employeeID, double wage) {//creates employee with parameters
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeID = employeeID;
