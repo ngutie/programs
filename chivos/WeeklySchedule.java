@@ -1,9 +1,9 @@
 package chivos;
 
 public class WeeklySchedule {
-    private String[][] schedule = new String[7][24];
+    private String[][] schedule = new String[7][24]; //constructors
 
-    public WeeklySchedule() {
+    public WeeklySchedule() {//uses loop to create array to store schedule
         for (int i = 0; i < 7; i++) {
             for (int j = 0; j < 24; j++) {
                 schedule[i][j] = "Empty";
