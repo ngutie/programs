@@ -17,10 +17,10 @@ public class Main{
     
         @Override
         public void start(Stage primaryStage) {
-            Employee employee = new Employee("Tony", "Pedraza", 1, 25.5);
+            Employee employee = new Employee("Tony", "Pedraza", 1, 25.5);//creates premade employee and manager to avoid error
             Manager manager = new Manager("Noah", "Gutierrez", 2, 20.75);
     
-            weeklySchedule = new WeeklySchedule();
+            weeklySchedule = new WeeklySchedule();//makes a schedule with some premade people scheduled
             weeklySchedule.setSchedule(0, 8, "Noah Gutierrez");
             weeklySchedule.setSchedule(1, 8, "John Doe");
             weeklySchedule.setSchedule(2, 8, "Jane Smith");
@@ -28,7 +28,7 @@ public class Main{
             showLoginScene(primaryStage);
         }
     
-        private void showLoginScene(Stage primaryStage) {
+        private void showLoginScene(Stage primaryStage) {// makes login screen asking for employeeid
             GridPane gridPane = new GridPane();
             gridPane.setHgap(10);
             gridPane.setVgap(10);
@@ -61,7 +61,7 @@ public class Main{
             primaryStage.setScene(scene);
             primaryStage.show();
         }
-        private void showMenuEmployee(Stage primaryStage) {
+        private void showMenuEmployee(Stage primaryStage) {//shows menu for employee and makes a new screen with new buttons
                 VBox vBox = new VBox(10);
                 vBox.setAlignment(Pos.CENTER);
             
@@ -113,7 +113,7 @@ public class Main{
                 primaryStage.setScene(scene);
                 primaryStage.show();
         }
-        private void showMenuManager(Stage primaryStage) {
+        private void showMenuManager(Stage primaryStage) {//shows manager menu with a new screen and buttons
                 VBox vBox = new VBox(10);
                 vBox.setAlignment(Pos.CENTER);
             
